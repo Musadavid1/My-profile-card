@@ -1,0 +1,341 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(231, 216, 193, 0.73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.card {
+    max-width: 320px;
+    width: 100%;
+    min-height: 420px;
+    padding: 30px 20px;
+    border: 2px solid rgba(206, 200, 192, 0.77);
+    border-radius: 20px;
+    
+    
+    background: linear-gradient(180deg, #ffffff 0%, #ffe3c1 60%, #eab676 100%);
+    
+    box-shadow: 0 10px 25px rgba(112, 26, 117, 0.15);
+    text-align: center;
+}
+
+.profile-pic {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 4px solid #eab676;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(112, 26, 117, 0.2);
+    margin-bottom: 12px;
+}
+
+.name {
+    font-size: 22px;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 300;
+    color: #666;
+    margin: 0 0 15px;
+}
+
+.bio {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.contact-btn {
+    border: none;
+    padding: 10px 16px;
+    color: #ffffff;
+    background-color: #eab676;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 80%;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(112, 26, 117, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.contact-btn:hover {
+    background-color: #d9a362;
+    transform: translateY(-2px);
+}
+
+.Bio{
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
+
+.Bio h1{
+    font-size: 28px;
+    color:#333;
+    margin-bottom: 10px;
+}
+
+.Bio p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/*  Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    box-shadow: 0 2px 4px rgba(112, 26, 117, 0.1);
+}
+
+/* Table cells */
+.table th,
+.table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Table heading */
+.table th {
+    background-color: #333;
+    color: white;
+}
+
+/* Table rows */
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect */
+.table tr:hover {
+    background-color: #ddd;
+}
+
+/* Rounded corners */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Contact Section */
+.contact {
+    margin-top: 30px;
+}
+
+/* Heading */
+.contact h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(112, 26, 117, 0.1);
+}
+
+/* Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Labels */
+.contact label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Input fields */
+.contact input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Textarea */
+.contact textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    height: 120px;
+    resize: vertical;
+}
+
+/* Focus effect */
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Submit button */
+.contact button {
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .profile {
+        gap: 15px;
+    }
+
+    .about h2,
+    .table h2,
+    .contact h2 {
+        font-size: 24px;
+    }
+
+    .columns {
+        gap: 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .card {
+        width: auto;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    /* Stack profile items */
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile img {
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Stack columns */
+    .columns {
+        flex-direction: column;
+    }
+
+    /* Navigation */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Smaller text */
+    h1 {
+        font-size: 26px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    /* Form */
+    .contact input,
+    .contact textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Skills table */
+    .table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .table th,
+    .table td {
+        padding: 8px;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+
